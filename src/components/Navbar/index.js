@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 // Custom Components
 import NavItem from './NavItem';
@@ -19,11 +19,11 @@ export default () => (
         <Fragment>
             <div className="wrapTabs">
                 <NavItem imgSrc={ HOME } altText="Home Tab" navLabel="Home" route="/" /> {/* Home Tab */}
-                <NavItem imgSrc={ WALLET } altText="Everyday banking Tab" navLabel="Everyday banking" route="/everyday-banking"/> {/* Everyday banking Tab */}
+                <NavItem imgSrc={ WALLET } altText="Everyday banking Tab" navLabel="Everyday banking" route="/banking" /> {/* Everyday banking Tab */}
             </div>
             <div>
-                <Route exact path="/" component={Home} />
-                <Route path="/everyday-banking" component={EverydayBanking} />
+                <Route exact path="/" component={ Home } />
+                <Route path="/banking" component={ EverydayBanking } />
             </div>
         </Fragment>
     </Router>
