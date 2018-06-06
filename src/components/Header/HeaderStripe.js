@@ -1,2 +1,2 @@
 import React from 'react';
-export default () => <div className="stripe">Stripe</div>
+export default () => <div className="stripe" />
