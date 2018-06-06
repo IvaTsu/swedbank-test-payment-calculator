@@ -10,6 +10,7 @@ export default () =>
         <img
             src={ LOGO }
             className="logo"
+            alt="Swedbank Logo"
         />
     </div>
 ;
