@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Custom Components
-import HeaderStripe from './../Header/HeaderStripe';
+import Stripe from '../Header/Stripe';
 // social icons
 import Icons from './../../static/icons';
 // styles
@@ -16,7 +16,7 @@ const SKYPE = Icons.skype;
 
 export default () =>
     <div>
-        <HeaderStripe />
+        <Stripe stripeHeight="0.3rem" />
         <div className="containerF">
             <div className="containerX">
                 <div className="block">

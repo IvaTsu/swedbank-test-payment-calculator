@@ -7,7 +7,9 @@ import Navbar from './components/Navbar/index';
 import Footer from './components/Footer/index';
 
 // styles
-import './reset.sass';
+
+import './styles/reset.sass';
+import './styles/main.sass';
 
 const DOCUMENT_ROOT = document.getElementById("root");
 const App = () => (
