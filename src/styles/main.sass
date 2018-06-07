@@ -1,0 +1,25 @@
+// colors
+$containerMainBgColor: rgb(251,242,234) // containerFluid
+$containerWhiteColor: white // container
+$mainHeaderColor: rgb(243,91,28) // header
+$mainContentColor: black
+
+=mainPadding($bottom, $left)
+  padding: 0.5rem 0 $bottom $left
+
+.containerFluid
+  width: 100%
+  padding-bottom: 1.5rem
+  background-color: $containerMainBgColor
+
+.container
+  margin: 0 auto
+  width: 80%
+  background-color: $containerWhiteColor
+
+.header
+  +mainPadding(0.5rem, 11%)
+  font-size: 1.5rem
+  font-weight: bold
+  color: $mainHeaderColor
+

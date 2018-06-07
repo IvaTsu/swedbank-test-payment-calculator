@@ -1,21 +1,22 @@
-.containerFluid
-  width: 100%
-  padding-bottom: 1.5rem
-  background-color: rgb(251,242,234)
+@import './../../styles/main'
 
-.container
-  margin: 0 auto
-  width: 80%
-  background-color: white
+// Payment and Calculator Nav Tabs
+.tabsContainer
+  +mainPadding(0, 10%)
+
+.tab
+  background-color: $containerWhiteColor
+  border: none
+  color: $mainContentColor
+  padding: 0.5rem
+  text-align: center
+  text-decoration: none
+  display: inline-block
+  font-size: 16px
+  cursor: pointer
 
 .separator
   height: 0.5rem
-
-.header
-  padding: 0.5rem 0 0.5rem 11%
-  font-size: 1.5rem
-  font-weight: bold
-  color: #f95f00
 
 .exportSection
   display: flex

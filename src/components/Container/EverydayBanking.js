@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 
+// Custom Components
+import TabNav from './TabNav';
+
 class EverydayBanking extends Component {
     constructor(props) {
         super(props);
@@ -7,6 +10,7 @@ class EverydayBanking extends Component {
             isPaymentTabActive: true,
         };
     }
+
     _handlePaymentTabClick = () => {
         this.setState({
             isPaymentTabActive: true
@@ -66,13 +70,18 @@ class EverydayBanking extends Component {
             </div>
         );
         return (
-            <div>
-                <h2>Igapaevapangandus</h2>
-                <div>
-                    <button onClick={this._handlePaymentTabClick}>Payment</button>
-                    <button onClick={this._handleCalculatorTabClick}>Calculator</button>
+            <div className="containerFluid">
+                <h2 className="header">Igapaevapangandus</h2>
+                <div className="tabsContainer">
+                    <TabNav href="#" onClick={this._handlePaymentTabClick} label="Payment" />
+                    <TabNav href="#" onClick={this._handleCalculatorTabClick} label="Calculator" />
                 </div>
-                {renderTab}
+                <div className="container">
+
+                    <div>
+                        {renderTab}
+                    </div>
+                </div>
                 <div>
                     <img src="" alt="" />
                     <div>
