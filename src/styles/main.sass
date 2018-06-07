@@ -10,11 +10,17 @@ $tabFontSize: 1rem
   padding: 0.5rem 0 $bottom $left
 
 // center element with flex
-=flexCenter
+=flexCenter($horizontalDirection)
   display: flex
-  flex-direction: column
+  flex-direction: $horizontalDirection
   justify-content: center
   align-items: center
+
+=flexEnd($horizontalDirection)
+  display: flex
+  flex-direction: $horizontalDirection
+  justify-content: flex-end
+  align-items: flex-end
 
 .containerFluid
   width: 100%

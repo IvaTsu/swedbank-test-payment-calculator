@@ -15,23 +15,17 @@
   cursor: pointer
 
 .accountContainer
-  +flexCenter
+  +flexCenter(column)
 
 .innerAccountContainer
-  display: flex
-  flex-direction: column
-  justify-content: flex-end
-  align-items: flex-end
+  +flexEnd(column)
 
 .inputContainerWidthPart
   width: 8rem
   margin-right: 0.5rem
 
 .btnContainer
-  display: flex
-  flex-direction: row
-  justify-content: flex-end
-  align-items: flex-end
+  +flexEnd(row)
 
 .separator
   height: 0.5rem
