@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 // Custom Components
 import TabNav from './TabNav';
+import Account from './Account';
+import Calculator from './Calculator';
 
 class EverydayBanking extends Component {
     constructor(props) {
@@ -25,49 +27,9 @@ class EverydayBanking extends Component {
 
     render() {
         const renderTab = this.state.isPaymentTabActive ? (
-            <div>
-                <label htmlFor="name">Account</label>
-                <select name="account">
-                    <option value="Account name 1">Account name 1</option>
-                    <option value="Account name 2">Account name 2</option>
-                </select>
-                <label htmlFor="payments">Saved payments</label>
-                <select name="payments">
-                    <option disabled defaultValue="Select a saved payment">Select a saved payment</option>
-                    <option value="Payment option 1">Payment option 1</option>
-                </select>
-                <label htmlFor="amount">Amount</label>
-                <input name="amount" type="number" min="1" />
-                <select name="currency">
-                    <option value="EUR">EUR</option>
-                </select>
-                <label htmlFor="description">Description</label>
-                <input type="text" name="description" />
-                <div>
-                    <button>Save</button>
-                    <button>Pay</button>
-                </div>
-            </div>
+            <Account />
         ) : (
-            <div>
-                <label htmlFor="loan">Loan size</label>
-                <input name="loan" type="range" />
-                <label htmlFor="period">Period</label>
-                <select name="period">
-                    <option value="30 years">30 years</option>
-                </select>
-                <label htmlFor="interest">Interest</label>
-                <select name="interest">
-                    <option value="4.5%">4.5%</option>
-                </select>
-                <div>
-                    <span>Monthly payment</span>
-                    <span>573.6 EUR</span>
-                    <div>
-                        <button>Apply</button>
-                    </div>
-                </div>
-            </div>
+            <Calculator />
         );
         {/* Handling Background change for the Tabs */}
         const backgroundColorOfActiveTab = {
@@ -87,10 +49,7 @@ class EverydayBanking extends Component {
                     <TabNav href="#" onClick={this._handleCalculatorTabClick} label="Calculator" style={ changeBackgroundOfCalculatorTab } />
                 </div>
                 <div className="container">
-
-                    <div>
-                        {renderTab}
-                    </div>
+                    {renderTab}
                 </div>
                 <div>
                     <img src="" alt="" />
