@@ -16,11 +16,18 @@ $tabFontSize: 1rem
   justify-content: center
   align-items: center
 
+// align right(flex-end) with flex
 =flexEnd($horizontalDirection)
   display: flex
   flex-direction: $horizontalDirection
   justify-content: flex-end
   align-items: flex-end
+
+// custom flex positioning
+=flexJustify($horizontalDirection, $justifyContent)
+  display: flex
+  flex-direction: $horizontalDirection
+  justify-content: $justifyContent
 
 .containerFluid
   width: 100%

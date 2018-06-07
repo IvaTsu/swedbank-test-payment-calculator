@@ -3,7 +3,7 @@ import React from 'react';
 const INPUT_CONTAINER_FULL_WIDTH = "12rem"; // for names: account, payments, description
 
 export default () => (
-    <form >
+    <form>
         <div className="accountContainer">
             <div className="innerAccountContainer">
                 <div>

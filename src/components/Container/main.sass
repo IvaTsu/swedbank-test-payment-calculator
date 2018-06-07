@@ -14,6 +14,7 @@
   font-size: $tabFontSize
   cursor: pointer
 
+// Account.js
 .accountContainer
   +flexCenter(column)
 
@@ -27,10 +28,9 @@
 .btnContainer
   +flexEnd(row)
 
+// ---
 .separator
   height: 0.5rem
 
 .exportSection
-  display: flex
-  flex-direction: row
-  justify-content: space-between
+  +flexJustify(row, space-between)
