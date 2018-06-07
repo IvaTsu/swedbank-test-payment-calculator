@@ -12,8 +12,25 @@ module.exports = {
                     presets: [
                         'env',
                         'react',
+                        'stage-2'
                     ]
                 },
+            },
+            {
+                test: /\.sass$/,
+                use: ['style-loader', 'css-loader', 'sass-loader'],
+            },
+            {
+                test: /\.(gif|png|jpe?g|svg)$/i,
+                use: [
+                    'file-loader',
+                    {
+                        loader: 'image-webpack-loader',
+                        options: {
+                            disable: true, // webpack@2.x and newer
+                        },
+                    },
+                ],
             }
         ]
     },

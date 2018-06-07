@@ -1,8 +1,24 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import ReactDom from 'react-dom';
 
+// Custom Components
+import Header from './components/Header/index';
+import Navbar from './components/Navbar/index';
+import Footer from './components/Footer/index';
+
+// styles
+
+import './styles/reset.sass';
+import './styles/main.sass';
+
 const DOCUMENT_ROOT = document.getElementById("root");
-const App = () => <div>Hello</div>;
+const App = () => (
+    <Fragment>
+        <Header />
+        <Navbar />
+        <Footer />
+    </Fragment>
+);
 
 ReactDom.render(
     <App />,
