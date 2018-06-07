@@ -51,7 +51,7 @@ class EverydayBanking extends Component {
                 <div className="container">
                     {renderTab}
                 </div>
-                <div>
+                <div className="container containerSeparator">
                     <img src="" alt="" />
                     <div>
                         <h4>Welcome to Swedbank!</h4>
