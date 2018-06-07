@@ -3,6 +3,8 @@ $containerMainBgColor: rgb(251,242,234) // containerFluid
 $containerWhiteColor: white // container
 $mainHeaderColor: rgb(243,91,28) // header
 $mainContentColor: black
+$headerFontSize: 1.5rem
+$tabFontSize: 1rem
 
 =mainPadding($bottom, $left)
   padding: 0.5rem 0 $bottom $left
@@ -19,7 +21,7 @@ $mainContentColor: black
 
 .header
   +mainPadding(0.5rem, 11%)
-  font-size: 1.5rem
+  font-size: $headerFontSize
   font-weight: bold
   color: $mainHeaderColor
 

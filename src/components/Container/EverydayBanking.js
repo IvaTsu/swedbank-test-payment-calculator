@@ -7,7 +7,7 @@ class EverydayBanking extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            isPaymentTabActive: true,
+            isPaymentTabActive: true
         };
     }
 
@@ -33,7 +33,7 @@ class EverydayBanking extends Component {
                 </select>
                 <label htmlFor="payments">Saved payments</label>
                 <select name="payments">
-                    <option disabled selected>Select a saved payment</option>
+                    <option disabled defaultValue="Select a saved payment">Select a saved payment</option>
                     <option value="Payment option 1">Payment option 1</option>
                 </select>
                 <label htmlFor="amount">Amount</label>
@@ -69,12 +69,22 @@ class EverydayBanking extends Component {
                 </div>
             </div>
         );
+        {/* Handling Background change for the Tabs */}
+        const backgroundColorOfActiveTab = {
+            backgroundColor: "white",
+        };
+        const backgroundColorOfUnactiveTab = {
+            backgroundColor: "rgb(247,245,243)",
+        };
+        const changeBackgroundOfPaymentTab = this.state.isPaymentTabActive ? backgroundColorOfActiveTab : backgroundColorOfUnactiveTab;
+        const changeBackgroundOfCalculatorTab = !this.state.isPaymentTabActive ? backgroundColorOfActiveTab : backgroundColorOfUnactiveTab;
+
         return (
             <div className="containerFluid">
                 <h2 className="header">Igapaevapangandus</h2>
                 <div className="tabsContainer">
-                    <TabNav href="#" onClick={this._handlePaymentTabClick} label="Payment" />
-                    <TabNav href="#" onClick={this._handleCalculatorTabClick} label="Calculator" />
+                    <TabNav href="#" onClick={this._handlePaymentTabClick} label="Payment" style={ changeBackgroundOfPaymentTab } />
+                    <TabNav href="#" onClick={this._handleCalculatorTabClick} label="Calculator" style={ changeBackgroundOfCalculatorTab } />
                 </div>
                 <div className="container">
 
