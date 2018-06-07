@@ -7,7 +7,7 @@
 .tab
   border: none
   color: $mainContentColor
-  padding: 0.5rem
+  padding: 1rem
   text-align: center
   text-decoration: none
   display: inline-block
@@ -39,6 +39,27 @@
 
 .btnContainer
   +flexEnd(row)
+  margin: 0 1.1rem 0 0
+  padding-bottom: 1.1rem
+
+.btn
+  color: $containerWhiteColor
+  padding: 0.4rem 1rem
+  text-align: center
+  text-decoration: none
+  display: inline-block
+  font-size: $tabFontSize
+  font-weight: lighter
+  margin: 0.5rem 0.25rem
+  cursor: pointer
+
+.btnSave
+  +borderRadius(0.3125rem, 0.0625rem, solid, rgb(49,163,174)) // $radius, $borderWidth, $borderType, $borderColor
+  background-color: rgb(49,163,174)
+
+.btnPay
+  +borderRadius(0.3125rem, 0.0625rem, solid, $mainHeaderColor) // $radius, $borderWidth, $borderType, $borderColor
+  background-color: $mainHeaderColor
 
 // ---
 .separator

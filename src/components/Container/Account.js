@@ -60,8 +60,8 @@ export default () => (
             </div>
         </div>
         <div className="btnContainer">
-            <button>Save</button>
-            <button>Pay</button>
+            <button className="btn btnSave" onClick={ event => event.preventDefault() }>Save</button>
+            <button className="btn btnPay" onClick={ event => event.preventDefault() }>Pay</button>
         </div>
     </form>
 );
