@@ -21,7 +21,29 @@ class EverydayBanking extends Component {
 
     render() {
         const renderTab = this.state.isPaymentTabActive ? (
-            <div>Payment</div>
+            <div>
+                <label htmlFor="name">Account</label>
+                <select name="account">
+                    <option value="Account name 1">Account name 1</option>
+                    <option value="Account name 2">Account name 2</option>
+                </select>
+                <label htmlFor="payments">Saved payments</label>
+                <select name="payments">
+                    <option disabled selected>Select a saved payment</option>
+                    <option value="Payment option 1">Payment option 1</option>
+                </select>
+                <label htmlFor="amount">Amount</label>
+                <input name="amount" type="number" min="1" />
+                <select name="currency">
+                    <option value="EUR">EUR</option>
+                </select>
+                <label htmlFor="description">Description</label>
+                <input type="text" name="description" />
+                <div>
+                    <button>Save</button>
+                    <button>Pay</button>
+                </div>
+            </div>
         ) : (
             <div>Calculator</div>
         );
@@ -43,6 +65,10 @@ class EverydayBanking extends Component {
                             As a major bank, we are a significant part of the financial system and play an important role in the local communities we serve.
                             We are dedicated to helping our customers, our shareholders and society as a whole stay financially sound and sustainable.
                         </p>
+                        <div>
+                            <a href="#">Read more</a>
+                            <button>Go</button>
+                        </div>
                     </div>
                 </div>
             </div>
