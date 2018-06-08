@@ -7,6 +7,7 @@ $headerFontSize: 1.5rem
 $tabFontSize: 1rem
 $selectColor: rgb(235,248,242)
 $borderColor: rgb(188,216,219)
+$linkColor: rgb(37,120,134)
 
 =mainPadding($bottom, $left)
   padding: 0.5rem 0 $bottom $left
@@ -56,8 +57,9 @@ $borderColor: rgb(188,216,219)
   margin-top: 0.5rem
 
 .header
-  +mainPadding(0.5rem, 11%)
   font-size: $headerFontSize
   font-weight: bold
   color: $mainHeaderColor
 
+.headerMargin
+  +mainPadding(0.5rem, 11%)

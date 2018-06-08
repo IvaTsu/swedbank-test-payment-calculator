@@ -2,90 +2,76 @@ import React from 'react';
 
 // Custom Components
 import Stripe from '../Header/Stripe';
-// social icons
-import Icons from './../../static/icons';
+import SocialBlock from './SocialBlock';
 // styles
 import './main.sass';
-
-// social icons paths
-const FACEBOOK = Icons.facebook;
-const INSTAGRAM = Icons.instagram;
-const YOUTUBE = Icons.youtube;
-const TWITTER = Icons.twitter;
-const SKYPE = Icons.skype;
 
 export default () =>
     <div>
         <Stripe stripeHeight="0.3rem" />
-        <div className="containerF">
-            <div className="containerX">
+        <div className="containerFluidFooter">
+            <div className="containerFooter">
                 <div className="block">
-                    <h4>Contact</h4>
-                    <p>6 310 310</p>
-                    <p>info@swedbank.ee</p>
-                    <p>SWEDBANK AS</p>
-                    <p>liivalaia 8, 15040 Tallinn</p>
-                    <p>SIFT kood/BIC: HABAEE2X</p>
-                    <p>Reg. number: 10060701</p>
-                    <div className="social">
-                        <img src={ FACEBOOK } alt="Facebook Social Icon" />
-                        <img src={ INSTAGRAM } alt="Instagram Social Icon" />
-                        <img src={ YOUTUBE } alt="YouTube Social Icon" />
-                        <img src={ TWITTER } alt="Twitter Social Icon" />
-                        <img src={ SKYPE } alt="Skype Social Icon" />
-                    </div>
+                    <h4 className="blockHeader">Contact</h4>
+                    <a href="tel:6310310" className="header telLink">6 310 310</a>
+                    <a href="mailto:info@swedbank.ee" className="emailLink">info@swedbank.ee</a>
+                    <p className="contactBlockText">SWEDBANK AS</p>
+                    <p className="contactBlockText">liivalaia 8, 15040 Tallinn</p>
+                    <p className="contactBlockText">SIFT kood/BIC: HABAEE2X</p>
+                    <p className="contactBlockText">Reg. number: 10060701</p>
+                    <SocialBlock />
                 </div>
                 <div className="block">
-                    <h4>Quicklinks</h4>
+                    <h4 className="blockHeader">Quicklinks</h4>
                     <ul>
                         <li>
-                            <a href="#">Calculators</a>
+                            <a className="footerLink" href="#">Calculators</a>
                         </li>
                         <li>
-                            <a href="#">Prices</a>
+                            <a className="footerLink" href="#">Prices</a>
                         </li>
                         <li>
-                            <a href="#">Terms of service</a>
+                            <a className="footerLink" href="#">Terms of service</a>
                         </li>
                         <li>
-                            <a href="#">Privacy and security</a>
+                            <a className="footerLink" href="#">Privacy and security</a>
                         </li>
                     </ul>
                 </div>
                 <div className="block">
-                    <h4>Join Swedbank</h4>
+                    <h4 className="blockHeader">Join Swedbank</h4>
                     <ul>
                         <li>
-                            <a href="#">Client programs</a>
+                            <a className="footerLink" href="#">Client programs</a>
                         </li>
                         <li>
-                            <a href="#">Business customers</a>
+                            <a className="footerLink" href="#">Business customers</a>
                         </li>
                         <li>
-                            <a href="#">Jobs</a>
+                            <a className="footerLink" href="#">Jobs</a>
                         </li>
                         <li>
-                            <a href="#">Internships</a>
+                            <a className="footerLink" href="#">Internships</a>
                         </li>
                     </ul>
                 </div>
                 <div className="block">
-                    <h4>Tooted</h4>
+                    <h4 className="blockHeader">Tooted</h4>
                     <ul>
                         <li>
-                            <a href="#">Everyday Banking</a>
+                            <a className="footerLink" href="#">Everyday Banking</a>
                         </li>
                         <li>
-                            <a href="#">Loans</a>
+                            <a className="footerLink" href="#">Loans</a>
                         </li>
                         <li>
-                            <a href="#">Insurance</a>
+                            <a className="footerLink" href="#">Insurance</a>
                         </li>
                         <li>
-                            <a href="#">Cards</a>
+                            <a className="footerLink" href="#">Cards</a>
                         </li>
                         <li>
-                            <a href="#">Stocks</a>
+                            <a className="footerLink" href="#">Stocks</a>
                         </li>
                     </ul>
                 </div>

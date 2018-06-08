@@ -5,7 +5,7 @@ import './main.sass';
 
 export default () =>
     <div className="containerFluid">
-        <h2 className="header">Home</h2>
+        <h2 className="header headerMargin">Home</h2>
         <div className="container">
             <div className="exportSection">
                 <p>Your Swedbank overview</p>

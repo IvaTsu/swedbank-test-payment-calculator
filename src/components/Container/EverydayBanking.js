@@ -44,7 +44,7 @@ class EverydayBanking extends Component {
 
         return (
             <div className="containerFluid">
-                <h2 className="header">Igapaevapangandus</h2>
+                <h2 className="header headerMargin">Igapaevapangandus</h2>
                 <div className="tabsContainer">
                     <TabNav href="#" onClick={this._handlePaymentTabClick} label="Payment" style={ changeBackgroundOfPaymentTab } />
                     <TabNav href="#" onClick={this._handleCalculatorTabClick} label="Calculator" style={ changeBackgroundOfCalculatorTab } />
