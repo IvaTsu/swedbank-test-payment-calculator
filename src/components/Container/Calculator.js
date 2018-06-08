@@ -1,28 +1,35 @@
 import React from 'react';
 
+// Custom Components
+import LoanRange from './LoanRange';
+
 export default () => (
     <div className="calculatorContainer">
         <div className="loanCalculator">
-            <div>
-                <label htmlFor="loan">Loan size</label>
-                <input name="loan" type="range" />
-            </div>
-            <div>
-                <label htmlFor="period">Period</label>
-                <select name="period">
-                    <option value="30 years">30 years</option>
-                </select>
-            </div>
-            <div>
-                <label htmlFor="interest">Interest</label>
-                <select name="interest">
-                    <option value="4.5%">4.5%</option>
-                </select>
+            <div className="calculatorContainerStart">
+                <LoanRange
+                    minRangeValue="1"
+                    maxRngeValue="100"
+                />
+                <div>
+                    <label htmlFor="period">Period</label>
+                    <select name="period">
+                        <option value="30 years">30 years</option>
+                    </select>
+                </div>
+                <div>
+                    <label htmlFor="interest">Interest</label>
+                    <select name="interest">
+                        <option value="4.5%">4.5%</option>
+                    </select>
+                </div>
             </div>
         </div>
         <div>
-            <span>Monthly payment</span>
-            <span>573.6 EUR</span>
+            <div className="line">
+                <span>Monthly payment</span>
+                <span>573.6 EUR</span>
+            </div>
             <div>
                 <button>Apply</button>
             </div>
