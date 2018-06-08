@@ -78,7 +78,7 @@ export default () =>
             </div>
         </div>
         <div className="additionalInfo">
-            <p>
+            <p className="additionalInfoText">
                 This is a website of companies offering financial services - Swedbank AS, Swedbank Liising AS, Swedbank P&C Insurance AS, Swedbank Life Insurance SE, and Swedbank Investeerimisfondid AS.
                 Before entering into any agreement read the term and conditions of the respective service. Consult a specialist, where necessary.
                 Swedbank AS does not provide a credit advisory service for the purposes of the Creditors and Credit Intermediaries Act.
