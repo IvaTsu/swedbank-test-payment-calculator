@@ -106,7 +106,32 @@
   padding-bottom: 1rem
 
 .info
-  margin: 1rem 1rem 0 1rem
+  margin: 1rem 1rem 0 0
+
+.infoHeader
+  font-size: 1.3rem
+  font-weight: bolder
+  margin-bottom: 1rem
+
+.infoContent
+  font-size: 0.9rem
+  text-align: justify
+
+.infoNavBlock
+  margin-top: 2rem
+  display: flex
+  justify-content: space-between
+
+.infoLink
+  align-self: flex-end
+  text-decoration: none
+  color: rgb(37,120,134)
+  &:before
+    content: "▸ "
+
+.btnGo
+  +borderRadius(0.3125rem, 0.0625rem, solid, $mainHeaderColor) // $radius, $borderWidth, $borderType, $borderColor
+  background-color: $mainHeaderColor
 
 .exportSection
   +flexJustify(row, space-between)
