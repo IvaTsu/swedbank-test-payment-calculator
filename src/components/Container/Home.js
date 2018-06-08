@@ -56,8 +56,8 @@ export default () =>
                 </tbody>
             </table>
         </div>
-        <div className="separator" />
-        <div className="container">
+
+        <div className="container containerSeparator">
             <div className="sectionWrap">
                 <div className="section">
                     <h3>Open</h3>

@@ -50,7 +50,6 @@
   display: inline-block
   font-size: $tabFontSize
   font-weight: lighter
-  margin: 0.5rem 0.25rem
   cursor: pointer
 
 .btnSave
@@ -60,10 +59,54 @@
 .btnPay
   +borderRadius(0.3125rem, 0.0625rem, solid, $mainHeaderColor) // $radius, $borderWidth, $borderType, $borderColor
   background-color: $mainHeaderColor
+  margin-left: 0.5rem
 
-// ---
-.separator
-  height: 0.5rem
+// EverydayBanking.js
+
+.containerWrap
+  margin: 1rem
+  background-color: $selectColor
+  display: inline-block
+
+// TalkBubble
+.talkBubble
+  width: 160px
+  height: 160px
+  background: rgb(253,193,41)
+  -moz-border-radius:    80px
+  -webkit-border-radius: 80px
+  border-radius:         80px
+  -ms-transform: rotate(-90deg) /* IE 9 */
+  -webkit-transform: rotate(-90deg) /* Safari 3-8 */
+  transform: rotate(-90deg)
+  &:before
+    content: ""
+    position: absolute
+    right: 156px
+    top: 58px
+    border-top: 22px solid transparent
+    border-right: 22px solid rgb(253,193,41)
+    border-bottom: 22px solid transparent
+
+  // outer margins
+  margin: 1rem
+
+.bubbleText
+  position: absolute
+  top: 72px
+  right: 38px
+  -ms-transform: rotate(90deg) /* IE 9 */
+  -webkit-transform: rotate(90deg) /* Safari 3-8 */
+  transform: rotate(90deg)
+  color: white
+  font-size: 1.16rem
+
+.innerContainerWrap
+  display: flex
+  padding-bottom: 1rem
+
+.info
+  margin: 1rem 1rem 0 1rem
 
 .exportSection
   +flexJustify(row, space-between)
