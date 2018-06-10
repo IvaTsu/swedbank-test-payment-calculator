@@ -1,8 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-// TODO PropTypes check
-
-export default ({ src, alt, label, onClick }) => (
+const Icon = ({ src, alt, label, onClick }) => (
     <a
         href="#"
         className="iconArea"
@@ -16,3 +15,12 @@ export default ({ src, alt, label, onClick }) => (
         <span className="iconLabel">{ label }</span>
     </a>
 );
+
+Icon.propTypes = {
+    src: PropTypes.string.isRequired,
+    alt: PropTypes.string.isRequired,
+    label: PropTypes.string.isRequired,
+    onClick: PropTypes.func.isRequired,
+};
+
+export default Icon;
