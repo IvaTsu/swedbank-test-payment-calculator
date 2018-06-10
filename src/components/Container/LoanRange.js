@@ -37,8 +37,8 @@ class LoanRange extends Component {
                         style={{ width: "20rem" }}
                     />
                     <div className="initialAndLast">
-                        <span className="initial">32000</span>
-                        <span className="last">320000</span>
+                        <span className="initial">32000 EUR</span>
+                        <span className="last">320000 EUR</span>
                     </div>
                 </div>
             </div>

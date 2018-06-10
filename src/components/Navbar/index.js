@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 // Custom Components
 import NavItem from './NavItem';
-import Home from './../Container/Home';
+import Home from '../Container/Home/Home';
 import EverydayBanking from './../Container/EverydayBanking';
 
 // styles

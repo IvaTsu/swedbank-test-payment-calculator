@@ -27,8 +27,8 @@ export default () => (
         </div>
         <div>
             <div className="line">
-                <span>Monthly payment</span>
-                <span>573.6 EUR</span>
+                <span className="nextLine">Monthly payment</span>
+                <span className="nextLine">573.6 EUR</span>
             </div>
             <div>
                 <button>Apply</button>

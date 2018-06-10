@@ -140,11 +140,6 @@
 .calculatorContainer
   +flexJustify(row, space-around)
 
-
-.calculatorContainerStart
-  margin-left: 10rem
-
-
 .loanCalculator
   +flexCenter(column)
   padding-right: 12rem
@@ -157,7 +152,7 @@
 
 .slider
   position: relative
-  top: -10px
+  top: -20px
   left: 45px
 
 output
@@ -167,9 +162,27 @@ output
   position: relative
   left: 65px
 
+.initial
+  color: #f95f00
+
 .last
   position: relative
   left: 14rem
+  color: #f95f00
 
 .line
+  display: flex
+  flex-direction: row
+  justify-content: space-around
   border-bottom: 1px solid gray
+
+.nextLine
+  display: flex
+  justify-content: space-around
+
+.floatBubble
+  color: #f95f00
+  display: flex
+  flex-direction: row
+  &:after
+    content: "EUR"
