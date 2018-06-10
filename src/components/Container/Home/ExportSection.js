@@ -17,6 +17,15 @@ class ExportSection extends Component {
             xlsLabel: 'XLS'
         };
     }
+
+    _onPdfClicked = () => {
+        console.log('PDF clicked');
+    };
+
+    _onXlsClicked = () => {
+        console.log('XLS clicked');
+    };
+
     render() {
         const { pdfIcon, pdfIconAltText, pdfLabel, xlsLabel } = this.state;
         return(
@@ -25,8 +34,18 @@ class ExportSection extends Component {
                 <div className="exportSection">
                     <p className="exportSectionHeader">Your Swedbank overview</p>
                     <div className="exportSectionIcons">
-                        <Icon src={ pdfIcon } alt={ pdfIconAltText } label={ pdfLabel } />
-                        <Icon src={ pdfIcon } alt={ pdfIconAltText } label={ xlsLabel } />
+                        <Icon
+                            src={ pdfIcon }
+                            alt={ pdfIconAltText }
+                            label={ pdfLabel }
+                            onClick={ this._onPdfClicked }
+                        />
+                        <Icon
+                            src={ pdfIcon }
+                            alt={ pdfIconAltText }
+                            label={ xlsLabel }
+                            onClick={ this._onXlsClicked }
+                        />
                     </div>
                 </div>
 
