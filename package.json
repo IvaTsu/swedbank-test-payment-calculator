@@ -21,6 +21,7 @@
     "file-loader": "^1.1.11",
     "image-webpack-loader": "^4.3.0",
     "node-sass": "^4.9.0",
+    "prop-types": "^15.6.1",
     "sass-loader": "^7.0.3",
     "style-loader": "^0.21.0",
     "webpack": "^4.11.0",
