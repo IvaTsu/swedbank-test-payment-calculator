@@ -1,21 +1,29 @@
-// -- Main Navbar Tab Wrapper
+// Root Styles
+@import './../../styles/main'
+
+/* Main Navbar Tab Wrapper: INDEX.JS */
 .wrapTabs
   display: flex
   flex-direction: row
   justify-content: space-around
-// -- end Main Navbar Tab Wrapper
-// -- NavItem Container
+
+
+/* NAVITEM.JS */
 .tabContainer
+  width: 100%
   padding: 0.5rem 0 0.5rem 0 /* Top, Right, Bottom, Left padding */
   border-bottom: lightgrey solid 0.001rem
-  width: 100%
   &:first-child
     border-right: lightgrey solid 0.001rem
-// -- end NavItem Container
-// -- Nav Item Tab Link
+  &:hover
+    cursor: pointer
+
 .tabLink
-  display: flex
-  flex-direction: column
-  align-items: center
+  +flexCenter(column)
   text-decoration: none
-// -- end Nav Item Tab Link
+
+.tabLabel
+  color: black
+
+.tabLabelActive
+  color: $mainHeaderColor
