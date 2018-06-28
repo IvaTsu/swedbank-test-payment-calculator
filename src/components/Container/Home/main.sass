@@ -1,0 +1,29 @@
+// Main Styles
+@import './../../../styles/main.sass'
+
+/* EXPORTSECTION.JS */
+.exportSection
+  +flexJustify(row, space-between)
+  margin: .5rem 1.5rem
+
+.exportSectionHeader
+  font-weight: bold
+  font-size: 1rem
+
+.exportSectionIcons
+  +flexCenter(row)
+
+
+/* ICON.JS */
+.iconArea
+  text-decoration: none
+  color: $linkColor
+  &:last-child
+    margin-left: .25rem
+
+.iconAlign
+  padding: .2rem
+
+.iconAlign,
+.iconLabel
+  vertical-align: middle

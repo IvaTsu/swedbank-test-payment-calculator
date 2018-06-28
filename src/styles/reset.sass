@@ -44,3 +44,12 @@ q:before, q:after
 table
   border-collapse: collapse
   border-spacing: 0
+
+/* Applying Border-Box for all the elements */
+html
+  box-sizing: border-box
+
+*
+  box-sizing: inherit
+  &:before, &:after
+    box-sizing: inherit

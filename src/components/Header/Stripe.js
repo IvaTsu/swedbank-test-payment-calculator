@@ -1,2 +1,15 @@
 import React from 'react';
-export default ({ stripeHeight }) => <div className="stripe" style={{ height: stripeHeight }} />
+import PropTypes from 'prop-types';
+
+const Stripe = ({ stripeHeight }) =>
+    <div
+        className="stripe"
+        style={{ height: stripeHeight }}
+    />
+;
+
+Stripe.propTypes = {
+    stripeHeight: PropTypes.string.isRequired,
+};
+
+export default Stripe;

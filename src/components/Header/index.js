@@ -1,15 +1,13 @@
-import React from 'react';
-
+import React, { Fragment } from 'react';
 // Custom Components
-import HeaderStripe from './Stripe';
-import HeaderLogo from './HeaderLogo';
-
+import Stripe from './Stripe';
+import Logo from './Logo';
 // styles
 import './main.sass';
 
 export default () => (
-    <div>
-        <HeaderStripe stripeHeight="0.5rem" />
-        <HeaderLogo />
-    </div>
+    <Fragment>
+        <Stripe stripeHeight="0.5rem" />
+        <Logo />
+    </Fragment>
 );

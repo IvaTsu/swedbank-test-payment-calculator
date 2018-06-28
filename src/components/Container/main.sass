@@ -1,28 +1,185 @@
-.containerFluid
-  width: 100%
-  padding-bottom: 1.5rem
-  background-color: rgb(251,242,234)
+@import './../../styles/main'
 
-.container
-  margin: 0 auto
-  width: 80%
-  background-color: white
+// Payment and Calculator Nav Tabs
+.tabsContainer
+  +mainPadding(0, 10%)
 
-.separator
-  height: 0.5rem
+.tab
+  border: none
+  color: $mainContentColor
+  padding: 1rem
+  text-align: center
+  text-decoration: none
+  display: inline-block
+  font-size: $tabFontSize
+  cursor: pointer
 
-.header
-  padding: 0.5rem 0 0.5rem 11%
-  font-size: 1.5rem
-  font-weight: bold
+// Account.js
+.accountContainer
+  +flexCenter(column)
+
+.innerAccountContainer
+  +flexEnd(column)
+  margin-top: 2rem
+  &:last-child
+    margin-bottom: 1rem
+
+.inputContainerWidthPart
+  width: 15rem
+  margin-right: 0.5rem
+
+.amountContainer
+  +flexCenter(row)
+
+.border
+  +borderRadius(0.3125rem, 0.0625rem, solid, $borderColor) // $radius, $borderWidth, $borderType, $borderColor
+
+.selectInput
+  background-color: $selectColor
+
+.btnContainer
+  +flexEnd(row)
+  margin: 0 1.1rem 0 0
+  padding-bottom: 1.1rem
+
+.btn
+  color: $containerWhiteColor
+  padding: 0.4rem 1rem
+  text-align: center
+  text-decoration: none
+  display: inline-block
+  font-size: $tabFontSize
+  font-weight: lighter
+  cursor: pointer
+
+.btnSave
+  +borderRadius(0.3125rem, 0.0625rem, solid, rgb(49,163,174)) // $radius, $borderWidth, $borderType, $borderColor
+  background-color: rgb(49,163,174)
+
+.btnPay
+  +borderRadius(0.3125rem, 0.0625rem, solid, $mainHeaderColor) // $radius, $borderWidth, $borderType, $borderColor
+  background-color: $mainHeaderColor
+  margin-left: 0.5rem
+
+// EverydayBanking.js
+
+.containerWrap
+  margin: 1rem
+  background-color: $selectColor
+  display: inline-block
+
+// TalkBubble
+.talkBubble
+  width: 160px
+  height: 160px
+  background: rgb(253,193,41)
+  -moz-border-radius:    80px
+  -webkit-border-radius: 80px
+  border-radius:         80px
+  -ms-transform: rotate(-90deg) /* IE 9 */
+  -webkit-transform: rotate(-90deg) /* Safari 3-8 */
+  transform: rotate(-90deg)
+  &:before
+    content: ""
+    position: absolute
+    right: 156px
+    top: 58px
+    border-top: 22px solid transparent
+    border-right: 22px solid rgb(253,193,41)
+    border-bottom: 22px solid transparent
+
+  // outer margins
+  margin: 1rem
+
+.bubbleText
+  position: absolute
+  top: 72px
+  right: 38px
+  -ms-transform: rotate(90deg) /* IE 9 */
+  -webkit-transform: rotate(90deg) /* Safari 3-8 */
+  transform: rotate(90deg)
+  color: white
+  font-size: 1.16rem
+
+.innerContainerWrap
+  display: flex
+  padding-bottom: 1rem
+
+.info
+  margin: 1rem 1rem 0 0
+
+.infoHeader
+  font-size: 1.3rem
+  font-weight: bolder
+  margin-bottom: 1rem
+
+.infoContent
+  font-size: 0.9rem
+  text-align: justify
+
+.infoNavBlock
+  margin-top: 2rem
+  display: flex
+  justify-content: space-between
+
+.infoLink
+  align-self: flex-end
+  text-decoration: none
+  color: $linkColor
+  &:before
+    content: "▸ "
+
+.btnGo
+  +borderRadius(0.3125rem, 0.0625rem, solid, $mainHeaderColor) // $radius, $borderWidth, $borderType, $borderColor
+  background-color: $mainHeaderColor
+
+// Calculator.js
+.calculatorContainer
+  +flexJustify(row, space-around)
+
+.loanCalculator
+  +flexCenter(column)
+  padding-right: 12rem
+  border-right: 1px solid gray
+
+.sliderContainer
+  display: flex
+  align-items: center
+  justify-content: center
+
+.slider
+  position: relative
+  top: -20px
+  left: 45px
+
+output
+  position: absolute
+
+.initialAndLast
+  position: relative
+  left: 65px
+
+.initial
   color: #f95f00
 
-.exportSection
-  display: flex
-  flex-direction: row
-  justify-content: space-between
+.last
+  position: relative
+  left: 14rem
+  color: #f95f00
 
-.sectionWrap
+.line
   display: flex
   flex-direction: row
-  justify-content: space-between
+  justify-content: space-around
+  border-bottom: 1px solid gray
+
+.nextLine
+  display: flex
+  justify-content: space-around
+
+.floatBubble
+  color: #f95f00
+  display: flex
+  flex-direction: row
+  &:after
+    content: "EUR"
